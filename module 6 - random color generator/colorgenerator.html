@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random color generator</title>
+</head>
+<body>
+    <button>Generate random color</button>
+</body>
+<script>
+    let btnElement=document.querySelector("button")
+    let bodyElement=document.querySelector("body")
+    btnElement.addEventListener("click",function(){
+       let r=Math.floor(Math.random()*255) //0.5*255=122.5=122
+       let g=Math.floor(Math.random()*255)
+       let b=Math.floor(Math.random()*255)
+
+       bodyElement.style.background=`rgb(${r},${g},${b})`
+
+    })
+</script>
+</html>
